@@ -1,0 +1,34 @@
+Sequelize and Database Setup
+
+npm install -g sequelize
+npm install --save sequelize sequelize-typescript pg-hstore pg
+npm install --save-dev @types/sequelize
+npm install dotenv --save
+
+Run nest generate module /core/database
+---------------------------------------
+Database Interface
+
+Inside the database folder, create an interfaces folder, then create a dbConfig.interface.ts
+---------------------------------------
+Database Configuration
+
+Inside the database folder, create a database.config.ts
+---------------------------------------
+.env file
+
+On our project root folder, create .env and .env.sample files. Copy and paste the following code into both files
+
+added to the .gitignore
+
+Run npm i --save @nestjs/config.
+
+Import the @nestjs/config into your app root module: src/app.module.ts
+--------------------------------------------------------------------
+Database Provider
+
+Inside the database folder, create a file called database.providers.ts
+
+
+
+
